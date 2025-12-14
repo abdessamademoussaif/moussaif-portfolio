@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://moussaif.online/sitemap.xml
