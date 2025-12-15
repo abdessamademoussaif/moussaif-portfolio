@@ -26,7 +26,7 @@ export const skills = [
   },
   {
     id: 6,
-    imgSrc: '/skills-icons/spring.png',
+    imgSrc: '/skills-icons/spring-boot-icon.png',
     name: 'Spring Boot',
   },
   {

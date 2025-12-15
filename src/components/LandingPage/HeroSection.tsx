@@ -35,14 +35,14 @@ const HeroSection = () => {
       </article>
 
       <AnimatedWrapper from="left">
-        <div className="max-[1322px]:mt-10">
+        <div className="max-[1322px]:mt-10 max-[1322px]:w-80 max-w-md">
           <Image
             src="/images/hero.webp"
             alt={`${firstName} ${lastName} - Back End Developer`}
             priority
             width={750}
             height={520}
-            className="border-2 border-fuchsia-400 rounded-full object-cover" 
+            className="border-2  border-fuchsia-400 rounded-full object-cover" 
           />
         </div>
       </AnimatedWrapper>
