@@ -56,22 +56,22 @@ export const skills = [
   },
   {
     id: 12,
-    imgSrc: '/skills-icons/redux-icon.webp',
-    name: 'Redux',
-  },
-  {
-    id: 13,
     imgSrc: '/skills-icons/rest-api-icon.png',
     name: 'REST API',
   },
   {
-    id: 14,
+    id: 13,
     imgSrc: '/skills-icons/git-icon.png',
     name: 'Git',
   },
   {
-    id: 15,
+    id: 14,
     imgSrc: '/skills-icons/github-icon.png',
     name: 'GitHub',
+  },
+  {
+    id: 15,
+    imgSrc: '/skills-icons/docker.png',
+    name: 'Docker',
   },
 ];
