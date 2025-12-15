@@ -7,15 +7,17 @@ const HeroSection = () => {
   const { firstName, lastName } = personalData;
   return (
     <section
-      className="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen"
-      id="home">
+      className="flex flex-col min-[1322px]:flex-row items-center justify-between w-full max-w-screen"
+      id="home"
+    >
       <article className="mt-16 lg:mt-0">
         <AnimatedWrapper from="right">
-          <h1 className="text-3xl lg:text-5xl uppercase mb-6">
-            my name <br className="hidden lg:block" /> is{' '}
-            <br className="block lg:hidden" />
+          {/* IMPROVEMENT: Removed unnecessary <br /> tags for better accessibility and flow */}
+          {/* Added max-w-2xl to control line break length in the absence of <br /> */}
+          <h1 className="text-3xl lg:text-5xl uppercase mb-6 max-w-2xl">
+            my name is{' '}
             <span className="font-bold bg-gradient bg-clip-text text-transparent">
-              {firstName} <br className="hidden lg:block" /> {lastName}...
+              {firstName} {lastName}...
             </span>
           </h1>
         </AnimatedWrapper>
@@ -31,15 +33,16 @@ const HeroSection = () => {
           </Link>
         </AnimatedWrapper>
       </article>
+
       <AnimatedWrapper from="left">
-        <div>
+        <div className="max-[1322px]:mt-10">
           <Image
-            src="/images/hero.png"
-            alt="hero"
-            priority 
-            width={450}
+            src="/images/hero.webp"
+            alt={`${firstName} ${lastName} - Back End Developer`}
+            priority
+            width={750}
             height={520}
-            className="min-w-[50%] w-auto h-auto max-[420px]:mt-10 border-3 border-fuchsia-400  rounded-full"
+            className="border-2 border-fuchsia-400 rounded-full object-cover" 
           />
         </div>
       </AnimatedWrapper>

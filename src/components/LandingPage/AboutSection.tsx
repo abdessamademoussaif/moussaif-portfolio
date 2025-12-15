@@ -25,12 +25,12 @@ const AboutSection = () => {
           from="right"
           className="text-center flex-2/5 flex items-center justify-center flex-col">
           <Image
-            src="/images/about.png"
+            src="/images/about.webp"
             alt="about"
-            width={430}
-            height={480}
+            width={210}
+            height={210}
             priority
-            className="w-auto h-auto border-3 border-fuchsia-400 rounded-full"
+            className="w-auto h-auto border-2 border-fuchsia-400 rounded-full"
           />
           <h3 className="text-2xl lg:text-4xl font-bold capitalize bg-gradient bg-clip-text text-transparent mt-4 mb-3">
             {firstName} {lastName}
@@ -57,7 +57,7 @@ const AboutSection = () => {
             </AnimatedWrapper>
             <AnimatedWrapper from="left" delay={0.3} >
               <Link href={`mailto:${email}`} target="_blank">
-                <MyInfo text={email} icon={<Mail/>} />
+                <MyInfo text={email} icon={<Mail />} />
               </Link>
             </AnimatedWrapper>
             <AnimatedWrapper from="left" delay={0.45}>
@@ -75,14 +75,15 @@ const AboutSection = () => {
                 </span>
               </p>
               <p>
-                Hello there! My name is{' '}
+                Hello, my name is{' '}
                 <span className="text-gradient-start">
                   {firstName} {lastName}
                 </span>
-                . I am a Backend Developer with hands-on experience
-                 designing and building scalable, secure, and efficient
-                  server-side applications using Node.js, Express.js, and MongoDB.
+                . I am a Backend Developer with practical experience in designing and
+                developing scalable, secure, and high-performance server-side applications
+                using JavaScript (Node.js) and Java (Spring Boot).
               </p>
+
             </div>
           </AnimatedWrapper>
           <AnimatedWrapper from="left">
